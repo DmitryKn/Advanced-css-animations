@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 -200">Awesome Parallax scrolling</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="./resorces/bg.jpg" alt="bg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum fugit culpa earum nam, illo blanditiis. Suscipit voluptatem tempore consequuntur aspernatur voluptates quo, nulla error illum sunt blanditiis et est!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 200">Awesome Parallax scrolling</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="./resorces/bg2.jpg" alt="bg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum fugit culpa earum nam, illo
+                        blanditiis. Suscipit voluptatem tempore consequuntur aspernatur voluptates quo, nulla error illum
+                        sunt blanditiis et est!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src='./resorces/jarallax.js'></script>
+    <script src='./resorces/jarallax-element.js'></script>
+    <script type="text/javascript">
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.2
+        });
+    </script>
+</body>
+</html>
