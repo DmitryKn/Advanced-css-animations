@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.imgBox img {
+  width: calc(100% + 50px); /*вся хитрость тут*/
+  opacity: 0.7;
+  transition: 0.5s;
+  transform: translateX(-40px);
+}
+
+.text {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: white;
+}
+
+.text p {
+  opacity: 0;
+}
+
+.text h2 {
+  margin: 0;
+}
+
+.text h2,
+.text p {
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.card:hover img,
+.card:hover p {
+  opacity: 1;
+  transition-delay: 0.05s;
+}
+
+.card:hover img,
+.card:hover h2,
+.card:hover p {
+  transform: translateX(0);
+}
